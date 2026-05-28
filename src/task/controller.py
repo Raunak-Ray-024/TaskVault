@@ -1,6 +1,6 @@
 from src.task.dtos import TaskSchema
-from sqlalchemy.orm import Session
-from src.task.modules import TaskModel  #ORM model (represents DB table)
+from sqlalchemy.orm import Session  #Session is used to interact with the database
+from src.task.modules import TaskModel  #ObjectRelationModel (represents DB table)- mtlb database tables ko python class ki tarah use karna
 from fastapi import HTTPException
 from src.user.modules import UserModel
 

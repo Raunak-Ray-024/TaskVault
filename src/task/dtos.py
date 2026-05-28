@@ -13,6 +13,6 @@ class TaskResponseSchema(BaseModel):
     description: Optional[str] 
     is_completed: Optional[bool] 
     user_id:int|None = 0
-    model_config = {
+    model_config = {  #data ko object form mei bhi accept kar sakta hai
     "from_attributes": True
-    }
+    } 

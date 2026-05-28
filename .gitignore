@@ -2,3 +2,45 @@
 env/
 __pycache__/
 *.pyc
+
+# ── PYTHON ENVIRONMENTS ──
+.venv/
+venv/
+ENV/
+env/
+# Custom environments you might have built
+.env_java/
+
+# ── PYTHON CACHE & RUNTIME ──
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# ── ENVIRONMENT VARIABLES & SECRETS ──
+# Absolutely critical to avoid pushing database keys/JWT secrets
+.env
+.env.*
+!.env.example
+secrets.json
+
+# ── LOCAL DATABASE STORAGE ──
+# Exclude local SQLite files or logs if you ever use them
+*.db
+*.sqlite3
+*.log
+
+# ── OPERATING SYSTEM FILES ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE & EDITOR CONFIGURATIONS ──
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
