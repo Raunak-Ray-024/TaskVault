@@ -2,7 +2,7 @@
 env/
 __pycache__/
 *.pyc
-
+render.yaml
 # ── PYTHON ENVIRONMENTS ──
 .venv/
 venv/
